@@ -1,0 +1,269 @@
+/*
+##########
+         Universal Styles
+##########
+*/
+
+html {
+
+  line-height: 1.4
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: rgb(71,71,71)
+
+}
+
+.section-container {
+  padding: 2.3em 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.big-image{
+ width: 60%;
+ height: auto;
+ padding: 0 1.8em;
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+}
+
+.column {
+  width: 42%;
+  height: 100%;
+  flex-direction: column;
+
+}
+
+.img {
+  display: flex;
+  padding: 1.1em 0 1.1em 1.5em;
+  overflow: hidden;
+}
+
+.background {
+  background-color: rgb(211, 211, 211);
+}
+
+.img-container {
+  width: 35%;
+  height: auto;
+  flex-shrink: 1;
+}
+
+.caption {
+  width: 65%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.06em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.caption h4 {
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.caption p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.img-itself {
+ max-width: 100%;
+ height: auto;
+ margin: 0 auto;
+}
+
+.link {
+  color: rgb(51, 136, 221);
+  transition: opacity 400ms ease-out 50ms;
+}
+
+.link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 200ms ease-out 50ms;
+}
+
+@media only screen and (min-width: 420px) {
+.mobile {
+  display: none;
+}
+}
+
+
+/*
+###########
+           Header
+###########
+*/
+
+header {
+justify-content: space-between;
+}
+
+.logo {
+  height: 2em;
+  font-size: 1.7em;
+  align-items: center;
+}
+
+ul {
+display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+li a {
+    color: rgb(71,71,71);
+    text-decoration: none;
+    padding-right: 1em;
+    font-size: 1.2em;
+
+}
+
+
+/*
+###########
+           Banner
+###########
+*/
+ .banner {
+   background-color: rgb(211, 211, 211);
+
+ }
+
+
+ .banner-caption {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3em 1em;
+   width: 40%;
+ }
+
+ .banner-caption-container {
+   width: 80%;
+   padding-left: 0.5em;
+ }
+
+ .banner-caption-container h1 {
+  font-weight: bold;
+  font-size: 2.8em;
+  line-height: 1.2em;
+ }
+
+ .banner-caption-container h3 {
+   font-weight: 700;
+   font-size: 1.4em;
+   padding: 1.2em 0 1.7em 0;
+   line-height: 1.5em;
+ }
+
+ .button {
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  background-color: rgb(71,71,71);
+  padding: 1em;
+  text-align: center;
+
+ }
+
+
+ /*
+ ###########
+            Information
+ ###########
+ */
+
+.information {
+  background-color: rgb(242, 245, 245);
+  padding-bottom: 4.5em;
+}
+ .information .big-image {
+   border: 1px solid rgb(211, 211, 211);
+ }
+
+.info-caption {
+  width: 90%
+}
+
+ .info-caption h1 {
+   font-weight: bold;
+   font-size: 2.35em;
+   line-height: 1.2em;
+   padding: 32px 0 24px 0;
+   margin: 0 auto;
+ }
+
+ .info-caption p {
+   font-weight: 300;
+   font-size: 1em;
+   line-height: 1.5em;
+   letter-spacing: 0.3px;
+ }
+
+ .info-caption div {
+   font-size: 1em;
+   padding-top: 2.9em;
+    }
+
+ .border {
+   border-bottom: 1px solid rgb(211, 211, 211);
+   border-top: 1px solid rgb(211, 211, 211);
+ }
+
+/*
+###########
+           Courses
+###########
+*/
+
+.courses-banner {
+  background-color: rgb(233, 234, 235);
+}
+
+.courses-banner h2 {
+  font-weight: bold;
+  font-size: 2.35em;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.courses {
+  flex-flow: row wrap;
+}
+
+.course {
+  width: 30%;
+  height: auto;
+  padding: 2em 1em;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+/*
+###########
+           Thesis
+###########
+*/
