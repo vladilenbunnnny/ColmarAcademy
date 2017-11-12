@@ -10,9 +10,9 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(243, 245, 245);
   font-family: sans-serif;
-  color: rgb(71,71,71)
+  color: rgb(71, 71, 71)
 
 }
 
@@ -114,16 +114,33 @@ body {
 
 header {
 justify-content: space-between;
+padding: 0.5em 1.5em;
 }
 
 .logo {
+  text-transform: uppercase;
   height: 2em;
-  font-size: 1.7em;
+  font-size: 1.5em;
   align-items: center;
+}
+
+.logo img {
+  height: 2em;
+  margin-right: 0.1em;
+}
+
+.one {
+  font-weight: 500;
+}
+
+.two {
+  color: rgb(154, 154, 154);
+  font-weight: 300;
 }
 
 ul {
 display: flex;
+
 }
 
 nav {
@@ -134,9 +151,57 @@ nav {
 li a {
     color: rgb(71,71,71);
     text-decoration: none;
-    padding-right: 1em;
+    padding: 0 0.35em;
     font-size: 1.2em;
+    font-weight: 300;
+    display: inline-block;
+      position: relative;
+}
 
+
+
+ul a:after,
+ul a:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1.2em;
+  width: 100%;
+  margin-top: -0.1em;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+}
+
+ul a:before {
+  border-left: 1px solid rgb(154, 154, 154);
+  border-right: 1px solid rgb(154, 154, 154);
+  -webkit-transform: scale(2,0);
+	transform: scale(2,0);
+}
+
+ul a:after {
+  border-bottom: 1px solid rgb(154, 154, 154);
+  border-top: 1px solid rgb(154, 154, 154);
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+ul a:hover:after,
+ul a:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+li a:hover {
+  color: rgb(154, 154, 154);
+  cursor: pointer;
+  transition: color 350ms;
 }
 
 
@@ -146,7 +211,7 @@ li a {
 ###########
 */
  .banner {
-   background-color: rgb(211, 211, 211);
+   background-color: rgb(215, 215, 215);
 
  }
 
@@ -184,6 +249,13 @@ li a {
   background-color: rgb(71,71,71);
   padding: 1em;
   text-align: center;
+  transition: background-color 700ms linear 50ms;
+ }
+
+ .button:hover {
+   background-color: rgb(125, 128, 133);
+   transition: background-color 700ms linear 100ms;
+   cursor: pointer;
 
  }
 
@@ -211,7 +283,6 @@ li a {
    font-size: 2.35em;
    line-height: 1.2em;
    padding: 32px 0 24px 0;
-   margin: 0 auto;
  }
 
  .info-caption p {
@@ -250,16 +321,47 @@ li a {
 
 .courses {
   flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 5.1em 2em 5.1em;
 }
 
 .course {
   width: 30%;
   height: auto;
-  padding: 2em 1em;
+  margin: 0 0.8em 2em 0.8em;
+  background-color: rgb(255, 255, 255);
 }
 
 .course img {
   max-width: 100%;
+}
+
+.course-caption {
+  margin-left: 1.5em;
+  width: 80%;
+  height: 10.3em;
+}
+
+.course h4 {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+.course h6 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1em;
+  color: rgb(126, 126, 126);
+  margin: 1em 0;
+}
+
+.course p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: rgb(126, 126, 126);
 }
 
 /*
@@ -267,3 +369,66 @@ li a {
            Thesis
 ###########
 */
+
+.thesis {
+  padding-bottom: 2.8em;
+}
+.thesis h2 {
+  font-weight: bold;
+  font-size: 2.35em;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.thesis-caption {
+  width: 95%
+}
+
+.thesis-caption h4 {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+.thesis-caption p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  color: rgb(126, 126, 126);
+}
+
+.thesis .desktop .column .img .caption p {
+    color: rgb(126, 126, 126);
+}
+
+
+/*
+###########
+           Footer
+###########
+*/
+
+footer {
+  justify-content: space-between;
+  color: rgb(126, 126, 126);
+  padding: 1.5em 1.5em 4.2em 1.5em;
+  font-weight: 300;
+  font-size: 0.9em;
+  border-top: 1px solid rgb(226, 228, 228);
+}
+
+footer nav ul li {
+  margin-left: 1em;
+  transition: color 400ms ease-out 50ms;
+}
+
+footer nav ul li:hover {
+  color: rgb(192, 205, 211);
+  cursor: pointer;
+  transition: color 200ms ease-out 50ms;
+}
+
+footer nav ul li:active {
+  color: black;
+}
