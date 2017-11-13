@@ -16,6 +16,7 @@ body {
 
 }
 
+
 .section-container {
   padding: 2.3em 0;
 }
@@ -44,6 +45,15 @@ body {
   display: flex;
   padding: 1.1em 0 1.1em 1.5em;
   overflow: hidden;
+  transition: box-shadow 500ms linear 100ms;
+}
+
+.img:hover {
+  -webkit-box-shadow: 10px 10px 50px 20px rgb(3, 51, 75) inset;
+ -moz-box-shadow: 10px 10px 50px 20px rgb(3, 51, 75) inset;
+ box-shadow: 5px 5px 50px 5px rgb(152, 151, 168) inset;
+ transition: box-shadow 500ms linear 100ms;
+ cursor: pointer;
 }
 
 .background {
@@ -53,7 +63,10 @@ body {
 .img-container {
   width: 35%;
   height: auto;
-  flex-shrink: 1;
+}
+
+.img-itself:hover {
+
 }
 
 .caption {
@@ -99,12 +112,28 @@ body {
   transition: opacity 200ms ease-out 50ms;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 760px) {
 .mobile {
   display: none;
 }
 }
 
+@media only screen and (max-width: 760px) {
+ .desktop {
+   display: none;
+}
+
+ body {
+     background-color: white;
+ }
+
+ .flex {
+   flex-direction: column;
+ }
+ .mobile-container {
+
+ }
+}
 
 /*
 ###########
@@ -178,8 +207,8 @@ ul a:before {
 ul a:before {
   border-left: 1px solid rgb(154, 154, 154);
   border-right: 1px solid rgb(154, 154, 154);
-  -webkit-transform: scale(2,0);
-	transform: scale(2,0);
+  -webkit-transform: scale(1,0);
+	transform: scale(1,0);
 }
 
 ul a:after {
@@ -204,6 +233,9 @@ li a:hover {
   transition: color 350ms;
 }
 
+@media screen only and (max-width: 760px) {
+
+}
 
 /*
 ###########
@@ -330,6 +362,16 @@ li a:hover {
   height: auto;
   margin: 0 0.8em 2em 0.8em;
   background-color: rgb(255, 255, 255);
+  transition: transform 500ms linear 100ms;
+}
+
+.course:hover {
+  -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+     -o-transform: rotate(-7deg);
+      transform: rotate(-7deg);
+  cursor: pointer;
+  transition: transform 500ms linear 100ms;
 }
 
 .course img {
@@ -362,6 +404,25 @@ li a:hover {
   line-height: 1.5em;
   letter-spacing: 0.5px;
   color: rgb(126, 126, 126);
+}
+
+@media only screen and (max-width: 760px) {
+
+
+  .courses-banner .mobile {
+  flex-direction: column;
+  }
+
+  .courses-mobile {
+    background-color: rgb(215, 215, 215);
+    margin-bottom: 0.5em;
+  }
+
+  .courses-mobile h4 {
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 1.5em 1em;
+  }
 }
 
 /*
