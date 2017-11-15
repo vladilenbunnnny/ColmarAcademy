@@ -131,8 +131,41 @@ body {
    flex-direction: column;
  }
  .mobile-container {
-
+  margin: 0 1.5em;
  }
+   .mobile-image {
+     max-width: 100%;
+   }
+
+   .column {
+     width: auto;
+   }
+
+   .img-container {
+     width: 100%;
+     height: auto;
+   }
+
+   .img {
+     flex-direction: column;
+     padding: 1.1em 1.5em
+   }
+
+   .caption {
+     width: 100%;
+     height: auto;
+     padding: 1em 0 0 1em;
+   }
+
+   .img-itself-mobile {
+     width: 100%;
+     height: auto;
+   }
+
+   .border {
+     border-top: none !important;
+     border-bottom: none !important;
+   }
 }
 
 /*
@@ -233,8 +266,21 @@ li a:hover {
   transition: color 350ms;
 }
 
-@media screen only and (max-width: 760px) {
+@media only screen and (max-width: 760px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.8em;
+  }
 
+  header img {
+    height: 2.3em;
+  }
+
+  header .logo {
+    height: 1.9em;
+  }
 }
 
 /*
@@ -291,6 +337,26 @@ li a:hover {
 
  }
 
+ @media only screen and (max-width: 760px) {
+
+   .banner .mobile-container {
+    padding: 2em 0 2.6em 1em;
+   }
+
+   .banner .mobile-container h1 {
+     font-weight: bold;
+     font-size: 2.6em;
+     line-height: 1.3em;
+     padding-bottom: 0.5em;
+   }
+
+   .banner .mobile-container h3 {
+     font-weight: 600;
+     font-size: 1.7em;
+     line-height: 1.5em;
+     padding-bottom: 1em;
+   }
+ }
 
  /*
  ###########
@@ -332,6 +398,12 @@ li a:hover {
  .border {
    border-bottom: 1px solid rgb(211, 211, 211);
    border-top: 1px solid rgb(211, 211, 211);
+ }
+
+ @media only screen and (max-width: 760px) {
+   .information .column {
+
+   }
  }
 
 /*
@@ -408,14 +480,23 @@ li a:hover {
 
 @media only screen and (max-width: 760px) {
 
+  .courses-banner {
+    background-color: rgb(245, 244, 245);
+    border: 1px solid rgb(232, 232, 232);
+  }
+
+  .courses-banner h2 {
+    padding: 1.1em 0;
+  }
 
   .courses-banner .mobile {
   flex-direction: column;
+  padding-bottom: 1.5em;
   }
 
   .courses-mobile {
     background-color: rgb(215, 215, 215);
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
   }
 
   .courses-mobile h4 {
@@ -435,10 +516,10 @@ li a:hover {
   padding-bottom: 2.8em;
 }
 .thesis h2 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 2.35em;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 1.1em 0;
 }
 
 .thesis-caption {
@@ -492,4 +573,12 @@ footer nav ul li:hover {
 
 footer nav ul li:active {
   color: black;
+}
+
+@media only screen and (max-width: 760px) {
+  footer {
+    border: none;
+    padding: 1.1em 1.5em 2.4em 1.5em;
+    color: rgb(95, 96, 96);
+  }
 }
