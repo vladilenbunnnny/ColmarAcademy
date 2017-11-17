@@ -237,13 +237,11 @@
      </div> <!--desktop flex tag-->
 
       <div class="mobile">
-        <video class="mobile-image" id="video" autobuffer height="240" width="360"
-         src="Resources/videos/thesis.mp4"></video>
-         <script> var video = document.getElementById('video');
-                  video.addEventListener('click',function(){
-                  video.play();
-                  },false); 
-         </script>
+        <video class="mobile-image" muted controls>
+         <source src="Resources/videos/thesis.mp4" type="video/mp4">
+        </video>
+        <script src="js/main.js"></script>
+
       </div>
     </div>
 
